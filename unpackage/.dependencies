@@ -1,0 +1,42 @@
+{
+  "html/find_main.html": {
+    "href": "html/find_main.html",
+    "resources": [
+      "fonts/mui.ttf"
+    ],
+    "priority": 1
+  },
+  "html/shop_gouwuche.html": {
+    "href": "html/shop_gouwuche.html",
+    "resources": [
+      "fonts/mui.ttf",
+      "js/angular.min.js",
+      "js/controller.js"
+    ],
+    "priority": 2
+  },
+  "html/shop_main.html": {
+    "href": "html/shop_main.html",
+    "resources": [
+      "fonts/mui.ttf"
+    ],
+    "refer": [],
+    "priority": 2
+  },
+  "html/me_homePage.html": {
+    "href": "html/me_homePage.html",
+    "resources": [
+      "fonts/mui.ttf"
+    ],
+    "priority": 3
+  },
+  "html/me_main.html": {
+    "href": "html/me_main.html",
+    "resources": [
+      "fonts/mui.ttf",
+      "fonts/mui.ttf"
+    ],
+    "refer": [],
+    "priority": 3
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>购物车</title>
+		<link href="../css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop_gouwuche.css"/>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+	</head>
+	<body ng-app="angularApp" ng-controller="myCtrl">
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-pull-left">
+				<img src="../img/me_main/me_homePage/nav_icon_back.png" alt="返回"  class="my_back"/>
+			</a>
+			<h1 class="mui-pull-left my_title">购物车</h1>
+		</header>
+		<div class="my_shopping">
+			<div class="my_total my_shopping_list">
+				<img src={{select[0]}} class="my_select" id="top_select" ng-click="dianji(0)"/>
+				<img src="../img/shop_gouwuche/20160720181715_uYeAy.png" class="my_duitang"/>
+				<span class="my_total_left">堆糖商店 （邮费：8元）</span><span class="my_total_right">共4件</span>
+			</div>
+			<div class="my_shopping_list">
+				<img src={{select[1]}} class="my_select my_goods_select" ng-click="dianji(1)"/>
+				<img src="../img/shop_gouwuche/09-02-14.jpg" class="my_goods_img"/>
+				<div class="my_goods_discription">
+					<p id="my_goods_title">Market o好丽友有机奶酪薯片 共3盒</p>
+					<p id="my_goods_num">数量：3盒</p>
+				</div>
+				<div class="my_goods_money">
+					<span class="jiage" data-jiage="39.9">￥39.90</span>
+					<div class="my_goods_add">
+						<div class="my_goods_box" ng-click="jian(0)">
+							<img src="../img/shop_gouwuche/20150810153701_r8HXS.png" alt="" />
+						</div>
+						<div class="my_goods_box shuliang" ng-model="shuliang[0]">{{shuliang[0]}}</div>
+						<div class="my_goods_box" ng-click="add(0)">
+							<img src="../img/shop_gouwuche/20150810143850_kPwnB.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="my_shopping_list">
+				<img src={{select[2]}} class="my_select my_goods_select" ng-click="dianji(2)"/>
+				<img src="../img/shop_gouwuche/09-02-19.jpg" class="my_goods_img"/>
+				<div class="my_goods_discription">
+					<p id="my_goods_title">十四行诗抹茶味手工牛轧糖</p>
+				</div>
+				<div class="my_goods_money">
+					<span class="jiage" data-jiage="48">￥48.00</span>
+					<div class="my_goods_add">
+						<div class="my_goods_box" ng-click="jian(1)">
+							<img src="../img/shop_gouwuche/20150810153701_r8HXS.png" alt="" />
+						</div>
+						<div class="my_goods_box shuliang">{{shuliang[1]}}</div>
+						<div class="my_goods_box" ng-click="add(1)">
+							<img src="../img/shop_gouwuche/20150810143850_kPwnB.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="my_shopping_list">
+				<img src={{select[3]}} class="my_select my_goods_select" ng-click="dianji(3)"/>
+				<img src="../img/shop_gouwuche/09-02-22.jpg" class="my_goods_img"/>
+				<div class="my_goods_discription">
+					<p id="my_goods_title">Venus Lab亮白瘦腿霜 200g</p>
+				</div>
+				<div class="my_goods_money">
+					<span class="jiage" data-jiage="168">￥168.00</span>
+					<div class="my_goods_add">
+						<div class="my_goods_box" ng-click="jian(2)">
+							<img src="../img/shop_gouwuche/20150810153701_r8HXS.png" alt="" />
+						</div>
+						<div class="my_goods_box shuliang">{{shuliang[2]}}</div>
+						<div class="my_goods_box" ng-click="add(2)">
+							<img src="../img/shop_gouwuche/20150810143850_kPwnB.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="my_shopping_list">
+				<img src={{select[4]}} class="my_select my_goods_select" ng-click="dianji(4)"/>
+				<img src="../img/shop_gouwuche/09-02-26.jpg" class="my_goods_img"/>
+				<div class="my_goods_discription">
+					<p id="my_goods_title">Daiso大创ER药用胎盘素美白套装</p>
+				</div>
+				<div class="my_goods_money">
+					<span class="jiage" data-jiage="79.9">￥79.90</span>
+					<div class="my_goods_add">
+						<div class="my_goods_box" ng-click="jian(3)">
+							<img src="../img/shop_gouwuche/20150810153701_r8HXS.png" alt="" />
+						</div>
+						<div class="my_goods_box shuliang">{{shuliang[3]}}</div>
+						<div class="my_goods_box" ng-click="add(3)">
+							<img src="../img/shop_gouwuche/20150810143850_kPwnB.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="my_total_bottom">
+				<img src="../img/shop_gouwuche/20160721185526_fye54.png" alt="" class="my_baoyou"/>
+				<span>满88元享受包邮</span>
+			</div>
+		</div>
+		<footer>
+			<img src="{{select[5]}}" class="my_select my_total_select" id="bottom_select" ng-click="dianji(5)"/>
+			<span class="my_select_all">全选</span>
+			<div class="my_total_discription">
+				<div class="my_xinxi">
+					<p>商品总计：<span id="zongjia" ng-bind="totalStr">{{totalStr}}</span></p>
+					<p>不含邮费</p>
+				</div>			
+				<div class="my_submit">
+					结算(<span id="zongshu" ng-bind="jishu">{{jishu}}</span>)
+				</div>
+			</div>
+		</footer>
+		<!--<script type="text/javascript" src="../js/shop_gouwuche.js"></script>-->
+		<script type="text/javascript" src="../js/controller.js"></script>
+	</body>
+</html>

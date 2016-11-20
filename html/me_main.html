@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/me_main.css"/>
+		<script src="../js/mui.min.js"></script>	    
+	</head>
+	<body id="page_4">
+		<header id="header">
+			<span>我</span>
+			<img class="header_shezhi" src="../img/me_main/nav_icon_set.png"/>
+		</header>
+		<section id="section_1">
+			<div id="se1_me">
+				<img src="../img/me_main/touxiang.jpg" alt="" class="se1_touxiang"/>
+				<span class="se_name">玖兰爱</span>
+				<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+			</div>
+		</section>
+		<section id="section_2">
+			<div class="se_header">
+				<img src="../img/me_main/me_icon_order.png" alt="" class="se_icon"/>
+				<span class="se_name">我的订单</span>
+				<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+			</div>
+			<div class="se2_list">
+				<div class="se2_list_item">
+					<img src="../img/me_main/icon_me_wait_pay.png" alt="" />
+					<span>待付款</span>
+				</div>
+				<div class="se2_list_item">
+					<img src="../img/me_main/icon_me_wait_send.png" alt="" />
+					<span>待发货</span>
+				</div>
+				<div class="se2_list_item">
+					<img src="../img/me_main/icon_me_wait_receive.png" alt="" />
+					<span>待收货</span>
+				</div>
+				<div class="se2_list_item">
+					<img src="../img/me_main/icon_me_wait_pingjia.png" alt="" />
+					<span>待评价</span>
+				</div>
+			</div>
+		</section>
+		<section id="section_3">
+			<div class="se3_top">
+				<div class="se_header">
+					<img src="../img/me_main/me_icon_coupon.png" alt="" class="se_icon"/>
+					<span class="se_name">我的礼券</span>
+					<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+				</div>
+				<div class="se_header">
+					<img src="../img/me_main/me_icon_luckybag.png" alt="" class="se_icon"/>
+					<span class="se_name">我的福袋</span>
+					<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+				</div>
+			</div>
+			<div class="se3_bottom">
+				<div class="se_header">
+					<img src="../img/me_main/me_icon_album.png" alt="" class="se_icon"/>
+					<span class="se_name">我的专辑</span>
+					<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+				</div>
+				<div class="se_header">
+					<img src="../img/me_main/me_icon_article.png" alt="" class="se_icon"/>
+					<span class="se_name">我的文章</span>
+					<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+				</div>
+				<div class="se_header">
+					<img src="../img/me_main/me_icon_collect.png" alt="" class="se_icon"/>
+					<span class="se_name">我的收藏</span>
+					<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+				</div>
+				<div class="se_header">
+					<img src="../img/me_main/me_icon_subscribe.png" alt="" class="se_icon"/>
+					<span class="se_name">我的订阅</span>
+					<img src="../img/me_main/icon_forward.png" alt="" class="se_go"/>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+			mui.init();
+			document.getElementById("se1_me").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"me_homePage.html",
+					id:"me_homePage.html"
+				})
+			})
+		</script>
+	</body>
+</html>

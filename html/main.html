@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆糖</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: white;
+				border: 1px solid #A0A0A0;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 0 3px rgba(0,0,0,.2);
+				overflow: hidden;
+			}
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				
+				margin: 0;
+			}
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				/*box-shadow: 0 4px 10px #bbb;*/
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+		</style>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-nav" id="header_1">
+		<div class="nav_title">每日精选</div>
+		<div class="nav_add" id="m_more"><img src="../img/main_page/add.png" alt="add"/></div>
+	</nav>
+	<div id="my_marsk" class="mui-backdrop">
+		<div class="my_box">
+			<div class="my_marsk_item">
+				<img src="../img/main_more/add_icon_camera.png" alt="拍照" />
+				<span>拍照</span>
+			</div>
+			<div class="my_marsk_item">
+				<img src="../img/main_more/add_icon_photos.png" alt="从相册上传图片" />
+				<span>从相册上传图片</span>
+			</div>
+			<div class="my_marsk_item">
+				<img src="../img/main_more/add_icon_web.png" alt="从网页抓取图片" />
+				<span>从网页抓取图片</span>
+			</div>
+		</div>
+		
+		<div id="my_close">
+			<img src="../img/main_more/nav_icon_close_white.png" alt="" />
+		</div>
+	</div>
+	<section  class="mui-content">	
+		<div id="slider" class="mui-slider mui-fullscreen">
+			<div class="mui-slider-group">
+				<div class="mui-slider-item mui-control-content">
+					<div class="mui-scroll-wrapper">
+						<div  class="mui-scroll"  id="list">						
+							<div class="artical">
+								<div class="fengmian">
+									<img src="../img/main_page/fengmian_1.jpg" alt="一秒钟的世界，我们该如何去记录?" />
+									<p>一秒钟的世界，我们该如何去记录?</p>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">有奖征文 <span>|</span> What is in my Bag?</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_1.jpg" alt="有奖征文" />
+									</div>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">公路歌单<span>|</span>来首摇滚乐吧！</p>
+										<p class="artical_author">文章 <span>|</span> 梵高先生和LadyBlue
+											<span class="artical_star"><i></i>67</span>
+										</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_2.jpg" alt="公路歌单" />
+									</div>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">囤货大会 · 幸福娃娃机 <span>|</span> 12种11.11囤货福袋抓不停</p>
+										<p class="artical_author">堆糖商店</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_3.jpg" alt="囤货大会" />
+									</div>
+								</div>
+								<div class="artical_list"> 
+									<div class="artical_discript">
+										<p class="artical_title">有一种可爱叫做摸头杀</p>
+										<p class="artical_author">专辑 <span>|</span> 喵呜不停
+											<span class="artical_star"><i></i>137</span>
+										</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_4.jpg" alt="有一种可爱叫做摸头杀" />
+									</div>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">零基础轻松get省时省力做菜大发</p>
+										<p class="artical_author">文章 <span>|</span> 后浪花
+											<span class="artical_star"><i></i>358</span>
+										</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_5.jpg" alt="零基础轻松get省时省力做菜大发" />
+									</div>
+								</div>
+							</div>
+							<div class="artical">
+								<div class="fengmian">
+									<img src="../img/main_page/fengmian_1.jpg" alt="一秒钟的世界，我们该如何去记录?" />
+									<p>一秒钟的世界，我们该如何去记录?</p>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">有奖征文 <span>|</span> What is in my Bag?</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_1.jpg" alt="有奖征文" />
+									</div>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">公路歌单<span>|</span>来首摇滚乐吧！</p>
+										<p class="artical_author">文章 <span>|</span> 梵高先生和LadyBlue
+											<span class="artical_star"><i></i>67</span>
+										</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_2.jpg" alt="公路歌单" />
+									</div>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">囤货大会 · 幸福娃娃机 <span>|</span> 12种11.11囤货福袋抓不停</p>
+										<p class="artical_author">堆糖商店</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_3.jpg" alt="囤货大会" />
+									</div>
+								</div>
+								<div class="artical_list"> 
+									<div class="artical_discript">
+										<p class="artical_title">有一种可爱叫做摸头杀</p>
+										<p class="artical_author">专辑 <span>|</span> 喵呜不停
+											<span class="artical_star"><i></i>137</span>
+										</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_4.jpg" alt="有一种可爱叫做摸头杀" />
+									</div>
+								</div>
+								<div class="artical_list">
+									<div class="artical_discript">
+										<p class="artical_title">零基础轻松get省时省力做菜大发</p>
+										<p class="artical_author">文章 <span>|</span> 后浪花
+											<span class="artical_star"><i></i>358</span>
+										</p>
+									</div>
+									<div class="artical_peitu">
+										<img src="../img/main_page/article_5.jpg" alt="零基础轻松get省时省力做菜大发" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>				
+			</div>
+		</div>
+	</section>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/mui.pullToRefresh.js"></script>
+	<script src="../js/mui.pullToRefresh.material.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		(function($) {
+			//阻尼系数
+			var deceleration = mui.os.ios?0.003:0.0009;
+			$('.mui-scroll-wrapper').scroll({
+				bounce: false,
+				indicators: true, //是否显示滚动条
+				deceleration:deceleration
+			});
+			$.ready(function() {
+				//循环初始化所有下拉刷新，上拉加载。
+				$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+					$(pullRefreshEl).pullToRefresh({
+						down: {
+							callback: function() {
+								var self = this;
+								setTimeout(function() {
+									self.endPullDownToRefresh();
+								}, 1000);
+							}
+						},
+					});
+				});
+			});
+		})(mui);
+		document.getElementById("m_more").onclick=function(){
+			document.getElementById("my_marsk").style.display="block";
+		}
+		document.getElementById("my_close").onclick=function(){
+			document.getElementById("my_marsk").style.display="none";
+		}
+	</script>
+</body>
+</html>

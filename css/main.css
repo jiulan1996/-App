@@ -1,0 +1,115 @@
+#header{
+	background: white;
+	border-bottom: 1px solid #ECECEC;
+}
+.mui-bar-nav{
+	box-shadow: none;
+}
+.nav_title{
+	line-height: 45px;
+}
+.nav_add{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -10px;
+}
+.nav_add>img{
+	width: 20px;
+	height: 20px;
+}
+#my_marsk{
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.my_box{
+	position: absolute;
+	width: 70%;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.my_marsk_item{
+	padding: 20px 5px;
+	border-bottom: 1px solid #92928F;
+}
+.my_marsk_item:last-child{
+	border-bottom: none;
+}
+.my_marsk_item>img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 65px;
+}
+.my_marsk_item>span{
+	color: white;
+	margin-left: 10px;
+}
+#my_close{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#my_close>img{
+	width: 40px;
+}
+.fengmian{
+	position: relative;
+}
+.fengmian>p{
+	position: absolute;
+	bottom: 20px;
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+.artical{
+	position: relative;
+}
+.artical_list{
+	margin-bottom: 8px;
+	background: white;
+	height: 130px;
+	position: relative;
+}
+.artical_discript{
+	width: 63%;
+	float: left;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.artical_discript>.artical_title{
+	line-height: 20px;
+}
+.artical_peitu{
+	width: 37%;
+	float: right;
+	height: 100%;
+}
+.artical_peitu>img{
+	width: 100%;
+	height: 100%;
+}
+.artical_author{
+	position: absolute;
+	bottom: 15px;
+	width: 53%;
+	font-size: 10px;
+	color: #7E7E7E;
+}
+.artical_star{
+	display: inline-block;
+	float: right;
+}
+.artical_star>i{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+	width: 10px;
+	height: 10px;
+	background: url(../img/main_page/star.png);
+	background-size: contain;
+	margin-right: 5px;
+}

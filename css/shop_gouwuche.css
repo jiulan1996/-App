@@ -1,0 +1,175 @@
+.mui-bar-nav{
+	box-shadow: none;
+	border-bottom: 1px solid #E0E0E0;
+}
+.my_body{
+	width: 100%;
+	overflow: hidden;
+}
+.my_back{
+	width: 30px;
+	margin-top: 6px;
+}
+.my_title{
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 25px;
+	line-height: 34px;
+}
+.my_shopping{
+	position: relative;
+	margin-top: 55px;
+	background: white;
+	border-top: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
+	padding-left: 10px;
+	margin-bottom: 65px;
+}
+.my_shopping_list{
+	border-bottom: 1px solid #ECECEC;
+	padding: 10px 10px 10px 0;
+	position: relative;
+}
+.my_select{
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+}
+.my_duitang{
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	margin-left: 8px;
+}
+.my_total_left{
+	font-size: 14px;
+	color: #8D8D8D;
+}
+.my_total_right{
+	float: right;
+	font-size: 12px;
+	color: #8D8D8D;
+}
+.my_goods_select{
+	margin-top: 40px;
+}
+.my_goods_img{
+	display: inline-block;
+	width: 28%;
+}
+.my_goods_discription{
+	position: relative;
+	float: right;
+	width: 60%;
+}
+.my_goods_discription>p{
+	margin-bottom: 0;
+}
+#my_goods_title{
+	line-height: 16px;
+	color: black;
+}
+#my_goods_num{
+	font-size: 12px;
+}
+.my_goods_money{
+	position: absolute;
+	bottom: 12px;
+	right: 10px;
+	width: 60%;
+}
+.my_goods_money>span{
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+}
+.my_goods_add{
+	float: right;
+	background: #F5F5F5;
+	border-radius: 3px;
+}
+.my_goods_box{
+	display: block;
+	float: left;
+	vertical-align: middle;
+	width: 30px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	color: #8D8D8D;
+}
+.my_goods_box>img{
+	width: 100%;
+	height: 100%;
+}
+.my_goods_box:first-child{
+	border-right: 2px solid white;
+}
+.my_goods_box:last-child{
+	border-left: 2px solid white;
+}
+.my_total_bottom{
+	padding: 10px 0;
+}
+.my_baoyou{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+}
+.my_total_bottom>span{
+	font-size: 12px;
+	color: #ABABAB;
+}
+footer{
+	position:fixed ;
+	bottom: 0;
+	background: white;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #E0E0E0;
+	padding-left: 10px;
+}
+.my_total_select{
+	margin-top: 13px;
+}
+.my_select_all{
+	line-height: 50px;
+	font-size: 14px;
+	margin-left: 10px;
+	color: #ABABAB;
+}
+.my_total_discription{
+	float: right;
+}
+.my_xinxi{
+	float: left;
+}
+.my_xinxi>p{
+	margin-bottom: 0;
+}
+.my_xinxi>p:first-child{
+	margin-top: 7px;
+	font-size: 16px;
+}
+.my_xinxi>p:last-child{
+	font-size: 12px;
+	line-height: 15px;
+	text-align: right;
+}
+.my_xinxi>p:first-child>span{
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+}
+.my_submit{
+	float: right;
+	margin-left: 10px;
+	background: #FF5959;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
